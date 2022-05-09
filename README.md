@@ -1,6 +1,6 @@
 # SIAC - CMI
-Trabalho de Grupo de ESW
-Sistema de Candidatura, Matricula e Inscricao
+- Trabalho de Grupo de ESW
+- Sistema de Candidatura, Matricula e Inscricao
 
 ## Feito por:
 - kafonso.dev@gmail.com
