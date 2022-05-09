@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.avatar_img{
+  width: 100px;
+  height: 100px;
+}
+
 .avatar_name{
   color: white;
   font-size: 0.9em;
@@ -24,6 +29,7 @@
 }
 
 .avatar_info{
+  visibility: hidden;
   color: white;
   display:flex;
   margin:0.25em 0em ;

@@ -9,7 +9,7 @@ export default function Avatar(props) {
   return (
     <div className='avatar'>
       <div className="avatar_img">
-        <img src="" alt="" />
+        <img src='/home/kafonso/SIAC-CMI/src/img/unnamed.jpg' alt="avatar" />
       </div>
       <div className="avatar_name">
         <h2>{name}</h2>

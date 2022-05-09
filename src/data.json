@@ -1,7 +1,8 @@
 {
-  "id":1,
+  "id": 1,
+  "img" : "public/unnamed.jpg",
   "name": "Pedro Afonso",
-  "type": "Aluno",
+  "type": "Funcionario",
   "info": {
     "course": "LEIT",
     "year": "3 Ano",
