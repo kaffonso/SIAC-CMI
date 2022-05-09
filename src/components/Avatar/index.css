@@ -1,0 +1,30 @@
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar_name{
+  color: white;
+  font-size: 0.9em;
+  margin: 0.2em;
+}
+
+.avatar_type{
+  align-items: center;
+  align-self: center;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
+  background-color: #0075A6;
+  padding: 0.2em 1.5em 0.2em 1.5em;
+  border: 0.12em solid white;
+  border-radius: 0.8em;
+  margin:0.25em 0em ;
+}
+
+.avatar_info{
+  color: white;
+  display:flex;
+  margin:0.25em 0em ;
+}

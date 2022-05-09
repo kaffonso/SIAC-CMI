@@ -1,0 +1,22 @@
+button{
+  width: 18em;
+  height: 50px;
+  padding: 1em 2em 1em 2em;
+
+  margin: 0.40em;
+  border-radius: 10px;
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.active{
+  background-color: #0075A6;
+  color: white;
+}
+
+.innactive{
+  background-color: white;
+  color:#444444;
+}

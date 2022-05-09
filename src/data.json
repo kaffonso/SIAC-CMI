@@ -1,0 +1,10 @@
+{
+  "id":1,
+  "name": "Pedro Afonso",
+  "type": "Aluno",
+  "info": {
+    "course": "LEIT",
+    "year": "3 Ano",
+    "code": "129371"
+  }
+}

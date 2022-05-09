@@ -1,6 +1,7 @@
+import Sidebar from "./components/Sidebar"
 
 export default function App() {
   return (
-    <h1>SIAC</h1>
+    <Sidebar/>
   )
 }
