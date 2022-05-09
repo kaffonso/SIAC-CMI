@@ -5,6 +5,5 @@ export default function App() {
     <>
     <Sidebar/>    
     </>
-    
   )
 }
