@@ -1,6 +1,13 @@
-
+import Content from "./Components/Section/Content";
 export default function App() {
   return (
-    <h1>SIAC</h1>
+    <div>
+      <h1>SIAC</h1>
+    <div>
+    <Content />
+    </div>
+      
+    </div>
+    
   )
 }
