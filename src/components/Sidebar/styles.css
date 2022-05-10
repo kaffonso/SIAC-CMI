@@ -1,10 +1,10 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family: ubuntu;
+  font-family: 'ubuntu', 'Ubuntu', sans-serif;;
 }
 .sidebar{
-  width: 21em;
+  width: 17em;
   height: 100vh;
   background-color: #64AECD;
   display: flex;
