@@ -1,6 +1,7 @@
 .footer{
-  margin-top: 25%;
+  position: absolute;
   width: 9em;
+  bottom: 1em;
 }
 
 #footer-img{
