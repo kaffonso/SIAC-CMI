@@ -3,7 +3,7 @@ import SideButtons from './SideButtons'
 import Footer from './Footer'
 import data from '../../data.json'
 
-import './index.css'
+import './styles.css'
 
 export default function Sidebar() {
 

@@ -1,9 +1,10 @@
 import './index.css'
+import image from '../../../img/banner.jpg'
 
 export default function Banner(){
   return(
     <div className="banner">
-      <img src="/home/kafonso/SIAC-CMI/src/img/banner.jpg" alt="" />
+      <img src={image} alt="" id='banner-img' />
     </div>
   )
 }

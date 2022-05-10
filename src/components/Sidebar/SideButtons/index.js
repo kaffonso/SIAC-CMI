@@ -1,5 +1,5 @@
 import SideButton from "../SideButton"
-import './index.css'
+import './styles.css'
 export default function SideButtons() {
   return (
     <div className="sidebuttons">

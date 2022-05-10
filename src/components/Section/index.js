@@ -7,6 +7,9 @@ export default function Section(){
       <div className="banner">
         <Banner />
       </div>
+      <div className="content">
+        <></>
+      </div>
     </div>
   )
 }

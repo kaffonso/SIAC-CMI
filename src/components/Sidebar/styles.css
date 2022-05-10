@@ -4,10 +4,15 @@
   font-family: ubuntu;
 }
 .sidebar{
-  width: 16.5em;
+  width: 21em;
   height: 100vh;
   background-color: #64AECD;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+img{
+  pointer-events: none;
+  user-select: none;
 }

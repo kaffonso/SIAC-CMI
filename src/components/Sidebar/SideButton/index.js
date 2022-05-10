@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './index.css'
+import './styles.css'
 
 export default function SideButton(props) { 
   const [status, setStatus] = useState(props.status)
@@ -7,9 +7,9 @@ export default function SideButton(props) {
   const handleClick = () => {
     console.log(status)
 
-    // if (status === 'innactive'){
-    //   setStatus("active")
-    // }
+    if (status === 'innactive'){
+      setStatus("active")
+    }
   }
 
   return (

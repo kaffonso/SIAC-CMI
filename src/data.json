@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "img" : "/home/kafonso/SIAC-CMI/src/img/unnamed.jpg",
+  "img" : "../../../img/profile.png",
   "name": "Pedro Afonso",
   "type": "Funcionario",
   "info": {
