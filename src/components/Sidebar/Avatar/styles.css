@@ -11,6 +11,13 @@
     height: 10em;
     border-radius: 50%;
     background-color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#avatar-img{
+  border-radius: 50%;
 }
 
 .avatar_name{

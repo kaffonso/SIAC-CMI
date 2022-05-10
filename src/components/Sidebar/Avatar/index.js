@@ -1,4 +1,5 @@
 import './styles.css'
+import image from '../../../img/profile.png'
 
 export default function Avatar(props) {
 
@@ -9,7 +10,7 @@ export default function Avatar(props) {
   return (
     <div className='avatar'>
       <div className="avatar_img">
-        <img src={props.data.img} alt="" />
+        <img src={image} alt="" id='avatar-img'/>
       </div>
       <div className="avatar_name">
         <h2>{name}</h2>
