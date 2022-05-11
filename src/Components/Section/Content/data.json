@@ -1,0 +1,14 @@
+{
+    "nome":"Bruno Miguel Jesus da Cruz Ângelo",
+    "curso":
+    {
+        "nomeCurso":"licenciatura em engenharia informatica",
+        "siglaCurso":"LEIT" 
+    },
+    "sexo":"M",
+    "ilha":{
+        "nomeIlha":"Sao Vicente",
+        "siglaIlha":"SV"
+    },
+    "estado":"Aprovado"
+}
