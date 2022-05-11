@@ -1,14 +1,19 @@
-import '../style.css'
+import "../style.css";
 export default function Data(props) {
-    const name = (props.data.nome).split(" ");
+  const studentData = props.data.info.map((data) => {
+    const name = data.nome.split(" ");
 
-  return (
-    <div className="wrapper containerBox">
-      <div className="box">{name[0]} {name[name.length-1]}</div>
-      <div className="box">{props.data.curso.siglaCurso}</div>
-      <div className="box">{props.data.sexo}</div>
-      <div className="box">{props.data.ilha.siglaIlha}</div>
-      <div className="box">{props.data.estado}</div>
-    </div>
-  );
+    return (
+      <div className="data">
+        <div className="box">
+          {name[0]} {name[name.length - 1]}
+        </div>
+        <div className="box">{data.curso.siglaCurso}</div>
+        <div className="box">{data.sexo}</div>
+        <div className="box">{data.ilha.siglaIlha}</div>
+        <div className="box">{data.estado}</div>
+      </div>
+    );
+  });
+  return <div className="wrapper containerBox">{studentData}</div>;
 }

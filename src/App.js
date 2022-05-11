@@ -1,13 +1,15 @@
-import Content from "./Components/Section/Content";
+
+import Sidebar from "./Components/Sidebar"
+import Section from "./Components/Section"
+
+import './styles/index.css'
+
 export default function App() {
   return (
-    <div>
-      <h1>SIAC</h1>
-    <div>
-    <Content />
+    <div className="app">
+      <Sidebar />
+      <Section />
     </div>
-      
-    </div>
-    
+
   )
 }

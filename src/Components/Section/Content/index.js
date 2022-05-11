@@ -4,7 +4,7 @@ import data from "./data.json";
 
 export default function content() {
   return (
-    <div className="content">
+    <div className="studentData">
     <div className="wrapper container containerBox">
       <div className="box">Nome</div>
       <div className="box">Curso</div>
@@ -14,7 +14,7 @@ export default function content() {
     </div>
 
     <div className="data">
-    <Data data = {data}/>
+      <Data data = {data} />
       </div>
     </div>
   );
