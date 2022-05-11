@@ -1,5 +1,5 @@
 import Banner from "./Banner"
-import './index.css'
+import './styles.css'
 
 export default function Section(){
   return(

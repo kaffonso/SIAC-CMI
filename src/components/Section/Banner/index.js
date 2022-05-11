@@ -1,4 +1,4 @@
-import './index.css'
+import './styles.css'
 import image from '../../../img/banner.jpg'
 
 export default function Banner(){
