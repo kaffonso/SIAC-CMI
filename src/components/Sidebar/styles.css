@@ -17,3 +17,21 @@ img{
   pointer-events: none;
   user-select: none;
 }
+
+.sidebuttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:  0.50vh;
+}
+
+.footer{
+  position: absolute;
+  width: 9em;
+  bottom: 1em;
+}
+
+#footer-img{
+  width: 100%;
+
+}
