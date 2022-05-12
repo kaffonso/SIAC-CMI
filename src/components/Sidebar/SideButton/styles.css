@@ -1,0 +1,33 @@
+button{
+  width: 18em;
+  height: 50px;
+  padding: 1em 2em 1em 2em;
+
+  margin: 0.40em;
+  border-radius: 8px;
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.active{
+  background-color: #0075A6;
+  color: white;
+}
+
+.active:hover{
+  border: 1px solid white;
+  background-color: #057aac;
+}
+
+.innactive{
+  background-color: white;
+  color:#444444;
+}
+
+.innactive:hover{
+  border: 1px solid #057aac;
+  
+}
+
