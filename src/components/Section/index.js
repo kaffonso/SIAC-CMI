@@ -1,12 +1,13 @@
-import Banner from "./Banner"
-import Content from './Content'
-import './index.css'
+import banner from '../../img/banner.jpg'
+import Content from '../Section/Content'
 
-export default function Section(){
-  return(
+import './styles.css'
+
+export default function Section() {
+  return (
     <div className="section">
       <div className="banner">
-        <Banner />
+        <img src={banner} alt="" id='banner-img' />
       </div>
       <div className="content">
         <Content />

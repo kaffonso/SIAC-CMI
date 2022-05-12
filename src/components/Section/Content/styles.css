@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.studentData {
+    width: 95%;
+    margin: 2.5%;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+.data_element {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.5em 1em 1.75em 1em;
+    transition: 0.25s;
+
+}
+.data_element:hover{
+    background-color: #bebebe;
+    transition: 0.25s;
+}
+
+.data_header {
+    background-color: #444444;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    padding: 0.5em 0.9em;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.box {
+    float: left;
+}
+
+/*Style divs horizontally*/
+.box:nth-child(1) {
+    width:10%;
+}
+
+.box:nth-child(2) {
+    width: 40%;
+}
+
+.box:nth-child(3) {
+    width: 20%;
+    text-align: center;
+
+}
+
+.box:nth-child(4) {
+    width: 10%;
+    text-align: center;
+
+}
+
+.box:nth-child(5) {
+    width: 10%;
+    text-align: center;
+
+}
+.box:nth-child(6) {
+    width: 10%;
+    text-align: center;
+}
+
+.data_container{
+    margin-top: 1em;
+    height: 50vh;
+    overflow:scroll;
+    border: 0.1em solid #444444;
+    border-radius: 0.5em;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    scrollbar-width:initial;
+    scrollbar-color: yellow;
+}
