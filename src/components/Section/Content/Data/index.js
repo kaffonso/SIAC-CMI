@@ -1,4 +1,4 @@
-import "../style.css";
+import "../styles.css";
 export default function Data(props) {
   const studentData = props.data.info.map((data) => {
     const name = data.nome.split(" ");
@@ -15,5 +15,5 @@ export default function Data(props) {
       </div>
     );
   });
-  return <div className="wrapper containerBox">{studentData}</div>;
+  return <div className="wrapper">{studentData}</div>;
 }
