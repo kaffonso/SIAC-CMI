@@ -5,8 +5,9 @@ export default function Data(props) {
 
     return (
       <div className="data">
+        <div className="box"> {data.code}</div>
         <div className="box">
-          {name[0]} {name[name.length - 1]}
+          {name[0]} {name[1]} {name[name.length - 1]}
         </div>
         <div className="box">{data.curso.siglaCurso}</div>
         <div className="box">{data.sexo}</div>
