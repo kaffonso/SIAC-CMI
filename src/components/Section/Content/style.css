@@ -1,0 +1,52 @@
+
+.studentData{
+    width: 70%;
+    margin: 5em;
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+.data{
+    margin: 0.5em;
+    padding: 1em;
+    
+}
+.container 
+{
+    background-color:#444444;
+    font-family:'Ubuntu', sans-serif;
+    font-size:1.0em;
+    color:white;
+    overflow:hidden;
+}
+.containerBox{
+    padding: 0.1em;
+    margin: 0.1em;
+    border: 00.1em;
+    border-radius: 0.2em;
+}
+
+.wrapper{
+    width:100%;
+}
+
+.box{
+    float:left;
+}
+/*Style divs horizontally*/
+.box:nth-child(1){
+    width:30%;
+}
+
+.box:nth-child(2){
+    width:20%;
+}
+.box:nth-child(3){
+    width:20%;
+}
+.box:nth-child(4){
+    width:20%;
+}
+.box:nth-child(5){
+    width:10%;
+}

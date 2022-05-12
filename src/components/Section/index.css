@@ -1,0 +1,13 @@
+.section {
+    width: 100%;
+
+}
+
+.content {
+    float: right;
+    width: 80%;
+}
+
+.banner {
+    float: left;
+}
