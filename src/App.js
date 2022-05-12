@@ -1,6 +1,6 @@
 
-import Sidebar from "./Components/Sidebar"
-import Section from "./Components/Section"
+import Sidebar from "./components/Sidebar"
+import Section from "./components/Section"
 
 import './styles/index.css'
 

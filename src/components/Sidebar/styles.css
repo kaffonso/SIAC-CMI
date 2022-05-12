@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'ubuntu', 'Ubuntu', sans-serif;;
+}
+.sidebar{
+  width: 17em;
+  height: 100vh;
+  background-color: #64AECD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+
+img{
+  pointer-events: none;
+  user-select: none;
+}
