@@ -11,16 +11,22 @@
     padding: 0.2em;
 }
 
-.data {
+.data_element {
     width: 100%;
-    padding: 1em 1em 2em 1em;
+    font-size: 0.9em;
+    padding: 0.5em 1em 1.75em 1em;
+    transition: 0.25s;
 
 }
+.data_element:hover{
+    background-color: #bebebe;
+    transition: 0.25s;
+}
 
-.container {
+.data_header {
     background-color: #444444;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.0em;
+    font-size: 0.9em;
     color: white;
     overflow: hidden;
     border-radius: 0.5em;
@@ -28,10 +34,7 @@
 }
 
 .wrapper {
-    margin-top: 1em;
-    border-radius: 0.5em;
     width: 100%;
-    border: 1px solid #444444;
 }
 
 .box {
@@ -44,20 +47,39 @@
 }
 
 .box:nth-child(2) {
-    width: 30%;
+    width: 40%;
 }
 
 .box:nth-child(3) {
     width: 20%;
+    text-align: center;
+
 }
 
 .box:nth-child(4) {
-    width: 20%;
+    width: 10%;
+    text-align: center;
+
 }
 
 .box:nth-child(5) {
     width: 10%;
+    text-align: center;
+
 }
 .box:nth-child(6) {
     width: 10%;
+    text-align: center;
+}
+
+.data_container{
+    margin-top: 1em;
+    height: 50vh;
+    overflow:scroll;
+    border: 0.1em solid #444444;
+    border-radius: 0.5em;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    scrollbar-width:initial;
+    scrollbar-color: yellow;
 }

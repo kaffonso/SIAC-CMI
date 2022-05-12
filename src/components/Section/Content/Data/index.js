@@ -1,18 +1,18 @@
 import "../styles.css";
 export default function Data(props) {
   const studentData = props.data.info.map((data) => {
-    const name = data.nome.split(" ");
+    const space = ''
+    const name = space.concat(data.nome,'').toUpperCase()
+    const status = space.concat(data.estado,'').toUpperCase()
 
     return (
-      <div className="data">
-        <div className="box"> {data.code}</div>
-        <div className="box">
-          {name[0]} {name[1]} {name[name.length - 1]}
-        </div>
-        <div className="box">{data.curso.siglaCurso}</div>
-        <div className="box">{data.sexo}</div>
-        <div className="box">{data.ilha.siglaIlha}</div>
-        <div className="box">{data.estado}</div>
+      <div className="data_element">
+        <p className="box">{data.code}</p>
+        <p className="box">{name}</p>
+        <p className="box">{data.curso.siglaCurso}</p>
+        <p className="box">{data.sexo}</p>
+        <p className="box">{data.ilha.siglaIlha}</p>
+        <p className="box">{status}</p>
       </div>
     );
   });
