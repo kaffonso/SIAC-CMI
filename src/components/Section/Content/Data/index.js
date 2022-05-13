@@ -2,9 +2,11 @@ import "../styles.css";
 import { useState } from "react";
 export default function Data(props) {
   const [searchName, setSearchName] = useState("");
+
   const filters = [] // array de filtros
+
   const filterReturn = (filter, value) => {
-    if (filter == "") {
+    if (filter === "") {
       return value;
     } else if (value.nome.toLowerCase().includes(filter.toLowerCase())) {
       return value;
@@ -17,6 +19,7 @@ export default function Data(props) {
       const space = "";
       const name = space.concat(data.nome, "").toUpperCase();
       const status = space.concat(data.estado, "").toUpperCase();
+      const ilha = space.concat(data.ilha.nomeIlha, "").toUpperCase();
 
       return (
         <div className="data_element">
@@ -24,22 +27,26 @@ export default function Data(props) {
           <p className="box">{name}</p>
           <p className="box">{data.curso.siglaCurso}</p>
           <p className="box">{data.sexo}</p>
-          <p className="box">{data.ilha.siglaIlha}</p>
+          <p className="box">{ilha}</p>
           <p className="box">{status}</p>
         </div>
       );
     });
   return (
-    <div className="wrapper">
-      <input
-        type="text"
-        placeholder="search"
-        onChange={(event) => {
-          setSearchName(event.target.value);
-        }}
-      />
-
-      {studentData}
-    </div>
+    <>
+      <div className="searchbar">
+        <input
+          type="text"
+          id="searchbar_input"
+          placeholder="Procurar"
+          onChange={(event) => {
+            setSearchName(event.target.value);
+          }}
+        />
+      </div>
+      <div className="wrapper">
+        {studentData}
+      </div>
+    </>
   );
 }
