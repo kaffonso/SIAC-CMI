@@ -12,6 +12,8 @@ export default function Data(props) {
     }
   };
 
+  data.sort((a,b) =>(a.code - b.code)) // ordenar dados por codigo, orderm crescente
+
   const data_student = data
     .filter((value) => filterReturn(searchName, value))
     .map((data) => {
@@ -21,7 +23,7 @@ export default function Data(props) {
       const ilha = space.concat(data.ilha.nomeIlha, "").toUpperCase();
 
       return (
-        <div className="data_element">
+        <div className="data_element" key={data.code}>
           <p className="box">{data.code}</p>
           <p className="box">{name}</p>
           <p className="box">{data.curso.siglaCurso}</p>
@@ -46,12 +48,12 @@ export default function Data(props) {
       </div>
       
       <div className="data_header">
-        <div className="box">CODIGO</div>
-        <div className="box">NOME</div>
-        <div className="box">CURSO</div>
-        <div className="box">SEXO</div>
-        <div className="box">ILHA</div>
-        <div className="box">ESTADO</div>
+        <p className="box">CODIGO</p>
+        <p className="box">NOME</p>
+        <p className="box">CURSO</p>
+        <p className="box">SEXO</p>
+        <p className="box">ILHA</p>
+        <p className="box">ESTADO</p>
       </div>
 
       <div className="data_wrapper">

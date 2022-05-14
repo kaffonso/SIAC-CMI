@@ -56,19 +56,18 @@
 }
 
 .box:nth-child(3) {
-    width: 20%;
+    width: 10%;
     text-align: center;
 }
 
 .box:nth-child(4) {
     width: 10%;
-    text-align: left;
-
+    text-align: center;
 }
 
 .box:nth-child(5) {
-    width: 10%;
-    text-align: left;
+    width: 20%;
+    text-align: center;
 }
 
 .box:nth-child(6) {
