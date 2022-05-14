@@ -1,9 +1,8 @@
 import "../styles.css";
 import { useState } from "react";
 export default function Data(props) {
+  const data = props.data.info
   const [searchName, setSearchName] = useState("");
-
-  const filters = [] // array de filtros
 
   const filterReturn = (filter, value) => {
     if (filter === "") {
@@ -13,7 +12,7 @@ export default function Data(props) {
     }
   };
 
-  const studentData = props.data.info
+  const data_student = data
     .filter((value) => filterReturn(searchName, value))
     .map((data) => {
       const space = "";
@@ -34,7 +33,8 @@ export default function Data(props) {
     });
   return (
     <>
-      <div className="searchbar">
+      <div className="data_searchbar">
+        <label htmlFor="PROCURAR">PROCURAR</label>
         <input
           type="text"
           id="searchbar_input"
@@ -44,8 +44,18 @@ export default function Data(props) {
           }}
         />
       </div>
-      <div className="wrapper">
-        {studentData}
+      
+      <div className="data_header">
+        <div className="box">CODIGO</div>
+        <div className="box">NOME</div>
+        <div className="box">CURSO</div>
+        <div className="box">SEXO</div>
+        <div className="box">ILHA</div>
+        <div className="box">ESTADO</div>
+      </div>
+
+      <div className="data_wrapper">
+        {data_student}
       </div>
     </>
   );
