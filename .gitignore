@@ -7,6 +7,14 @@ node_modules/
 /.pnp
 .pnp.js
 
+# Section
+/src/Components/Sidebar
+/src/Components/Section/Banner
+/src/img
+/src/styles
+/src/data.json
+
+
 # testing
 /coverage
 

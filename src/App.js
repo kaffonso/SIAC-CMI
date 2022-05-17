@@ -1,3 +1,4 @@
+
 import Sidebar from "./components/Sidebar"
 import Section from "./components/Section"
 
@@ -13,5 +14,6 @@ export default function App() {
         <Section />
       </div>
     </div>
+
   )
 }
