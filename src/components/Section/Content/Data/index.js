@@ -12,7 +12,7 @@ export default function Data(props) {
     }
   };
 
-  data.sort((a,b) =>(a.code - b.code)) // ordenar dados por codigo, orderm crescente
+  data.sort((a,b) =>(a.code - b.code)) // ordenar dados por codigo, ordem crescente
 
   const data_student = data
     .filter((value) => filterReturn(searchName, value))
