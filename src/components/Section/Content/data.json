@@ -2,250 +2,250 @@
     "info": [
         {
             "code": 201231 ,
-            "nome": "Bruno Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Bruno Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 219232 ,
-            "nome": "Kenny Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Kenny Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 229233 ,
-            "nome": "Maria Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Maria Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },{
             "code": 239231 ,
-            "nome": "Cristiano Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Cristiano Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 249232 ,
-            "nome": "Kendrick Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Kendrick Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 259233 ,
-            "nome": "Manuela Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Manuela Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },{
             "code": 269231 ,
-            "nome": "Tito Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Tito Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 279232 ,
-            "nome": "Kleiton Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Kleiton Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 289233 ,
-            "nome": "Mandelen Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Mandelen Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },{
             "code": 299231 ,
-            "nome": "Carlos Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Carlos Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209233 ,
-            "nome": "Jose Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Jose Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209234 ,
-            "nome": "Maria Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Maria Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },{
             "code": 209235 ,
-            "nome": "Antonio Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Antonio Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209236 ,
-            "nome": "Ricardo Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Ricardo Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209237 ,
-            "nome": "Luisa Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Luisa Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },{
             "code": 209238 ,
-            "nome": "Joao Miguel Jesus da Cruz Ângelo",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Joao Miguel Jesus da Cruz Ângelo",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209240 ,
-            "nome": "Paulo Roger Fortes Afonso",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia informatica",
-                "siglaCurso": "LEIT"
+            "name": "Paulo Roger Fortes Afonso",
+            "course": {
+                "courseName": "licenciatura em engenharia informatica",
+                "courseAcronym": "LEIT"
             },
-            "sexo": "M",
-            "ilha": {
-                "nomeIlha": "Sao Vicente",
-                "siglaIlha": "SV"
+            "sex": "M",
+            "island": {
+                "islandName": "Sao Vicente",
+                "islandAcronym": "SV"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         },
         {
             "code": 209241 ,
-            "nome": "Ana Carolina Fonseca Monteiro",
-            "curso": {
-                "nomeCurso": "licenciatura em engenharia civil",
-                "siglaCurso": "LEC"
+            "name": "Ana Carolina Fonseca Monteiro",
+            "course": {
+                "courseName": "licenciatura em engenharia civil",
+                "courseAcronym": "LEC"
             },
-            "sexo": "F",
-            "ilha": {
-                "nomeIlha": "Santiago",
-                "siglaIlha": "ST"
+            "sex": "F",
+            "island": {
+                "islandName": "Santiago",
+                "islandAcronym": "ST"
             },
-            "estado": "Aprovado"
+            "status": "Aprovado"
         }
     ]
 }
