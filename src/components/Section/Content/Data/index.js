@@ -7,7 +7,7 @@ export default function Data(props) {
   const filterReturn = (filter, value) => {
     if (filter === "") {
       return value;
-    } else if (value.nome.toLowerCase().includes(filter.toLowerCase())) {
+    } else if (value.name.toLowerCase().includes(filter.toLowerCase())) {
       return value;
     }
   };
@@ -20,7 +20,7 @@ export default function Data(props) {
       const space = "";
       const name = space.concat(data.name, "").toUpperCase();
       const status = space.concat(data.status, "").toUpperCase();
-      const island = space.concat(data.island.nameIsland, "").toUpperCase();
+      const island = space.concat(data.island.islandName, "").toUpperCase();
 
       return (
         <div className="data_element" key={data.code}>
