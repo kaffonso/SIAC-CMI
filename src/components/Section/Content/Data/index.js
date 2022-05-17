@@ -18,17 +18,17 @@ export default function Data(props) {
     .filter((value) => filterReturn(searchName, value))
     .map((data) => {
       const space = "";
-      const name = space.concat(data.nome, "").toUpperCase();
-      const status = space.concat(data.estado, "").toUpperCase();
-      const ilha = space.concat(data.ilha.nomeIlha, "").toUpperCase();
+      const name = space.concat(data.name, "").toUpperCase();
+      const status = space.concat(data.status, "").toUpperCase();
+      const island = space.concat(data.island.nameIsland, "").toUpperCase();
 
       return (
         <div className="data_element" key={data.code}>
           <p className="box">{data.code}</p>
           <p className="box">{name}</p>
-          <p className="box">{data.curso.siglaCurso}</p>
-          <p className="box">{data.sexo}</p>
-          <p className="box">{ilha}</p>
+          <p className="box">{data.course.courseAcronym}</p>
+          <p className="box">{data.sex}</p>
+          <p className="box">{island}</p>
           <p className="box">{status}</p>
         </div>
       );
