@@ -48,7 +48,7 @@ export default function Data(props) {
       </div>
       
       <div className="data_header">
-        <p className="box">CODIGO</p>
+        <p className="box">CDIGO</p>
         <p className="box">NOME</p>
         <p className="box">CURSO</p>
         <p className="box">SEXO</p>
