@@ -1,16 +1,16 @@
 import Avatar from './Avatar'
 import SideButton from './SideButton'
 import logo from '../../img/logo.png'
-import data from '../../data.json'
+
 
 import './styles.css'
 
-export default function Sidebar() {
+export default function Sidebar(props) {
 
   return (
     <div className="sidebar">
       <div className="avatar">
-        <Avatar data={data} />
+        <Avatar data={props.data} />
       </div>
       <div className="options">
         <div className="sidebuttons">

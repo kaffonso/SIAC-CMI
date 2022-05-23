@@ -1,6 +1,7 @@
 
 import Sidebar from "./components/Sidebar"
 import Section from "./components/Section"
+import data from './data.json'
 
 import './styles/index.css'
 
@@ -8,7 +9,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <Sidebar />
+        <Sidebar data={data}/>
       </div>
       <div className="section">
         <Section />
