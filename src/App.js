@@ -1,20 +1,14 @@
-
-import Sidebar from "./components/Sidebar"
-import Section from "./components/Section"
-import data from './data.json'
-
-import './styles/index.css'
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import Candidatos from "./pages/Funcionario/Candidatos";
+import ErrorPage from "./pages/ErrorPage";
 
 export default function App() {
   return (
-    <div className="app">
-      <div className="sidebar">
-        <Sidebar data={data}/>
-      </div>
-      <div className="section">
-        <Section />
-      </div>
-    </div>
-
-  )
+    <Router>
+      <Routes>
+        <Route path="/funcionario/candidatos" element={<Candidatos />}/> 
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
+  );
 }
