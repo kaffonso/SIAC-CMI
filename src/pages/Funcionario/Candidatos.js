@@ -7,7 +7,7 @@ import "./styles.css";
 
 export default function Candidatos() {
   return (
-    <div className="app">
+    <div className="candidates">
       <div className="sidebar">
         <Sidebar data={data} />
       </div>
