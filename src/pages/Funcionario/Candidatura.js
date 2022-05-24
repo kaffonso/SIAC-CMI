@@ -1,6 +1,6 @@
 import Sidebar from "../../components/Sidebar";
 import Section from "../../components/Section";
-import Content from "../../components/Section/Content";
+import Content from "../../components/Section/ShowData";
 import data from "../../data.json";
 
 import "./styles.css";
