@@ -5,7 +5,7 @@ import data from "../../data.json";
 
 import "./styles.css";
 
-export default function Candidatos() {
+export default function Candidatura() {
   return (
     <div className="candidates">
       <div className="sidebar">
