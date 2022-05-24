@@ -6,7 +6,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/funcionario/candidatos" element={<Candidatos />}/> 
+        <Route path="/funcionario/candidatura" element={<Candidatos />}/> 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

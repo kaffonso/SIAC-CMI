@@ -1,22 +1,25 @@
-import { useState } from "react"
-import './styles.css'
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import "./styles.css";
 
-export default function SideButton(props) { 
-  const [status, setStatus] = useState(props.status)
+export default function SideButton(props) {
+  const [status, setStatus] = useState(props.status);
 
-  // const handleClick = () => {
-  //   console.log(status)
+  const link = props.url.concat(props.title)
+  console.log(link)
 
-  //   if (status === 'innactive'){
-  //     setStatus("active")
-  //   }
-  // }
+  const nav = useNavigate();
 
   return (
     <div className="button">
-      <button className={status}>
+      <button
+        className={status}
+        onClick={() => {
+          nav(link);
+        }}
+      >
         {props.name}
       </button>
     </div>
-  )
+  );
 }
