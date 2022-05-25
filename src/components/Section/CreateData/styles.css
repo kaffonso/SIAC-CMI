@@ -1,0 +1,72 @@
+*{
+  font-family: 'Ubuntu', 'ubuntu', 'sans-serif';
+}
+
+.data_container{
+  padding: 1em;
+}
+
+.data_personal{
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data_school{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.data_course{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.data_payment{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.btn_submit{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end  
+}
+
+.btn_submit input{
+  border: 0;
+  padding: 0.4em 1.4em;
+  font-size: 0.8em;
+  background-color:rgb(42, 177, 42);
+  font-weight: 600;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.data_form p {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  margin: 0 1em 1em 0;
+}
+
+.dropdown select{
+  border: 0;
+  margin-top: 0.1em;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
