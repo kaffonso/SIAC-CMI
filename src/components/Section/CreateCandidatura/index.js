@@ -12,16 +12,16 @@ export default function CreateCandidatura() {
   const [islandAcronym, setIslandAcronym] = useState("");
   const [courseAcronym, setCourseAcronym] = useState("");
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
 
     const courseData = {
       "courseAcronym": courseAcronym,
     };
 
-    const islandData ={
+    const islandData = {
       "islandAcronym": islandAcronym
-    }
+    };
 
     const candidatura = {
       "code": 201231,
@@ -37,16 +37,16 @@ export default function CreateCandidatura() {
 
     console.log(candidatura);
 
-    setName('')
-    setDate('')
-    setCNI('')
-    setEmail('')
-    setSex('')
-    setTelephone('')
-    setCourseAcronym('')
-    
+    setName('');
+    setDate('');
+    setCNI('');
+    setEmail('');
+    setSex('');
+    setTelephone('');
+    setCourseAcronym('');
+
     e.target.reset();
-  };
+  }
 
   return (
     <div className="data_container">
