@@ -5,6 +5,7 @@ export default function Data(props) {
   //const data = props.data.info
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
+  const [status, setStatus] = useState("");
 
   useEffect(() => {
     fetchAllData();
@@ -19,13 +20,24 @@ export default function Data(props) {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?q=${value}`)
+      .get(`http://localhost:3333/info?name_like=${value}`)
       .then((response) =>{
          setData(response.data)
          setValue("")
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(`Search error: ${err}`));
   };
+
+  const handleStatus = async (e) => {
+    e.preventDefault();
+    return await axios
+    .get(`http://localhost:3333/info?status=${value}`)
+    .then((response)=>{
+      setData(response.data)
+      setValue("")
+    })
+    .catch((err) => console.err(`Status filter error: ${err}`))
+  }
 
   data.sort((a, b) => a.code - b.code); // ordenar dados por codigo, ordem crescente
 
@@ -69,6 +81,14 @@ export default function Data(props) {
       </div>
 
       <div className="data_wrapper">{data_student}</div>
+      <div>
+        <select onChange={(e) => {
+          setValue(e.target.value) 
+          }}>
+          <option value="Aprovado" onClick={handleStatus}>APROVADO</option>
+          <option value="Reprovado" onClick = {handleStatus}>REPROVADO</option>
+        </select>
+      </div>
     </>
   );
 }
