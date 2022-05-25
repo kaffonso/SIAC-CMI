@@ -1,8 +1,8 @@
-import InputData from "./InputData";
+import InputData from "../InputData";
 import { useState } from "react";
 import "./styles.css";
 
-export default function CreateData() {
+export default function CreateCandidatura() {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [CNI, setCNI] = useState("");
@@ -11,8 +11,6 @@ export default function CreateData() {
   const [sex, setSex] = useState("");
   const [islandAcronym, setIslandAcronym] = useState("");
   const [courseAcronym, setCourseAcronym] = useState("");
-  const [courseName, setCourseName] = useState("");
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,7 +44,6 @@ export default function CreateData() {
     setSex('')
     setTelephone('')
     setCourseAcronym('')
-    setCourseName('')
     
     e.target.reset();
   };
