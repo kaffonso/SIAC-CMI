@@ -63,6 +63,13 @@
   padding: 0.3em 1em
 }
 
+.data_matricula{
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 
 
 html{

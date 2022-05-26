@@ -92,7 +92,7 @@ export default function CreateCandidatura() {
                 name="sex"
                 onChange={(e) => setSex(e.target.value)}
               >
-                <option value="none" selected="disabled" hidden>
+                <option value="none" selected disabled hidden>
                   Escolha o Sexo
                 </option>
                 <option value="M">Masculino</option>
@@ -107,7 +107,7 @@ export default function CreateCandidatura() {
                   name="island"
                   onChange={(e) => setIslandAcronym(e.target.value)}
                 >
-                  <option value="none" selected="disabled" hidden>
+                  <option value="none" selected disabled hidden>
                     Escolha a Ilha
                   </option>
                   <option value="SA">Santo Antao</option>
@@ -141,7 +141,7 @@ export default function CreateCandidatura() {
                   setCourseAcronym(e.target.value);
                 }}
               >
-                <option value="none" selected="disabled" hidden>
+                <option value="none" selected disabled hidden>
                   Escolha o Curso
                 </option>
                 <option value="LEIT">

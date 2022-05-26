@@ -1,6 +1,6 @@
 
 export default function ErrorPage() {
   return (
-    <div>PAGE NOT FOUND!</div>
+    <div>ERROR 404 PAGE NOT FOUND!</div>
   );
 }
