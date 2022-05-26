@@ -57,7 +57,6 @@ export default function CreateCandidatura() {
             <InputData
               type="text"
               name="Nome"
-              placeholder="Nome"
               id="name"
               change={(e) => setName(e.target.value)}
             />

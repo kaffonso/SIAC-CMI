@@ -8,6 +8,7 @@ export default function InputData(props) {
         value={props.value}
         placeholder={props.placeholder}
         onChange={props.change}
+        accept="application/pdf"
         required
       />
     </div>
