@@ -7,6 +7,7 @@ import CandidaturaC from "./pages/Candidato/Candidatura";
 import MatriculaC from "./pages/Candidato/Matricula";
 
 import MatriculaA from "./pages/Aluno/Matricula";
+import InscricaoA from "./pages/Aluno/Inscricao";
 
 import ErrorPage from "./pages/ErrorPage";
 
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/funcionario/candidatura" element={<CandidaturaF />}/> 
+        <Route path="/funcionario/candidatura" element={<CandidaturaF />} isPrivate/> 
         <Route path="/funcionario/matricula" element={<MatriculaF />}/>
         <Route path="/funcionario/inscricao" element={<InscricaoF />}/>
         
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/candidato/matricula" element={<MatriculaC />}/>
 
         <Route path="/aluno/matricula" element={<MatriculaA />}/>
+        <Route path="/aluno/inscricao" element={<InscricaoA />}/>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
