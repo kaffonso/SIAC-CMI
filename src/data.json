@@ -2,7 +2,7 @@
   "id": 1,
   "img" : "../../../img/profile.png",
   "name": "Pedro Afonso",
-  "type": "Candidato",
+  "type": "Funcionario",
   "info": {
     "course": "LEIT",
     "year": "3 Ano",

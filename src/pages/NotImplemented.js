@@ -1,5 +1,3 @@
-export default function ErrorPage() {
-  return (
-    <div>PAGE NOT INPLEMENTED YET!</div>
-  );
+export default function NotImplemented() {
+  return <div>NOT IMPLEMENTED YET!</div>;
 }
