@@ -8,6 +8,7 @@ import "./styles.css";
 export default function Sidebar(props) {
   const sampleLocation = useLocation().pathname;
   const path = sampleLocation.split("/");
+  
   console.log(path[2]);
 
   let btn1, btn2, btn3;
@@ -36,6 +37,7 @@ export default function Sidebar(props) {
     url = "/aluno/";
   } else {
     url = "/candidato/";
+    btn3 = 'disabled'
   }
 
   return (
