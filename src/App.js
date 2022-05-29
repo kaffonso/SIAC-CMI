@@ -6,6 +6,8 @@ import InscricaoF from "./pages/Funcionario/Inscricao";
 import CandidaturaC from "./pages/Candidato/Candidatura";
 import MatriculaC from "./pages/Candidato/Matricula";
 
+import MatriculaA from "./pages/Aluno/Matricula";
+
 import ErrorPage from "./pages/ErrorPage";
 
 export default function App() {
@@ -18,6 +20,8 @@ export default function App() {
         
         <Route path="/candidato/candidatura" element={<CandidaturaC />}/>
         <Route path="/candidato/matricula" element={<MatriculaC />}/>
+
+        <Route path="/aluno/matricula" element={<MatriculaA />}/>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

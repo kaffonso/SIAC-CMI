@@ -26,6 +26,20 @@
   margin: 0.2em;
 }
 
+.avatar_info__course{
+  padding-right: 0.5em;
+  border-right: 1px solid white;
+}
+
+.avatar_info__year{
+  padding: 0em 0.5em;
+  border-right: 1px solid white;
+}
+
+.avatar_info__code{
+  padding: 0em 0em 0em 0.5em;
+}
+
 .avatar_type{
   align-items: center;
   align-self: center;
@@ -40,8 +54,14 @@
 }
 
 .avatar_info{
-  visibility: hidden;
+  visibility: visible;
   color: white;
   display:flex;
-  margin:0.25em 0em ;
+  font-weight: 500;
+  margin:1em 0em -2.5em 0em ;
+}
+
+.avatar_info_hidden{
+  visibility: hidden;
+  margin: 0em 0em -2em 0em;
 }

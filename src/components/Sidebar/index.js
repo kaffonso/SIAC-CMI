@@ -35,6 +35,7 @@ export default function Sidebar(props) {
     url = "/funcionario/";
   } else if (userType === "Aluno") {
     url = "/aluno/";
+    btn1 = 'disabled'
   } else {
     url = "/candidato/";
     btn3 = 'disabled'
