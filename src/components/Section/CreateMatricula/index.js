@@ -1,5 +1,6 @@
 import InputData from "../InputData";
 import { useState } from "react";
+import SubmitButton from "../SubmitButton";
 import "../CreateCandidatura/styles.css";
 
 export default function CreateMatricula() {
@@ -12,19 +13,19 @@ export default function CreateMatricula() {
     e.preventDefault();
 
     const candidatura = {
-      "code": 201231,
-      "name": name,
-      "cni": CNI,
-      "email": email,
-      "courseYear": courseYear
+      code: 201231,
+      name: name,
+      cni: CNI,
+      email: email,
+      courseYear: courseYear,
     };
 
     console.log(candidatura);
 
-    setName('');
-    setCNI('');
-    setEmail('');
-    setCourseYear('');
+    setName("");
+    setCNI("");
+    setEmail("");
+    setCourseYear("");
 
     e.target.reset();
   }
@@ -53,15 +54,14 @@ export default function CreateMatricula() {
               id="email"
               change={(e) => setEmail(e.target.value)}
             />
-            <div className="data_course">
-            </div>
+            <div className="data_course"></div>
             <InputData type="file" name="Fotocopia de NIF" />
             <InputData type="file" name="Fotocopia de CNI" />
           </div>
           <p>Detalhes de Matricula</p>
           <div className="data_course">
             <div className="dropdown">
-            <label for="course_year">Ano de Curso</label>
+              <label for="course_year">Ano de Curso</label>
               <select
                 id="course_year"
                 name="course_year"
@@ -77,16 +77,11 @@ export default function CreateMatricula() {
               </select>
             </div>
           </div>
-          <p>Escolha de Curso</p>
-          <div className="data_course">
-          </div>
           <p>Pagamento</p>
           <div className="data_payment">
             <InputData type="file" name="Comprovativo" />
           </div>
-          <div className="btn_submit">
-            <input type="submit" value="MATRICULAR" />
-          </div>
+          <SubmitButton title='Matricular'/>
         </form>
       </div>
     </div>

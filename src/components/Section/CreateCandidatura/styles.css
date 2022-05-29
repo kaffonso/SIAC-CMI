@@ -27,21 +27,6 @@
   display: flex;
 }
 
-.btn_submit{
-  display: flex;
-  width: 100%;
-  justify-content: flex-end  
-}
-
-.btn_submit input{
-  border: 0;
-  padding: 0.4em 1.4em;
-  font-size: 0.8em;
-  background-color:rgb(42, 177, 42);
-  font-weight: 600;
-  border-radius: 0.5em;
-  color: white;
-}
 
 .data_form p {
   font-weight: 700;

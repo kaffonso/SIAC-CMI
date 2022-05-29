@@ -1,5 +1,6 @@
 import InputData from "../InputData";
 import { useState } from "react";
+import SubmitButton from "../SubmitButton";
 import "./styles.css";
 
 export default function CreateCandidatura() {
@@ -157,9 +158,7 @@ export default function CreateCandidatura() {
           <div className="data_payment">
             <InputData type="file" name="Comprovativo" />
           </div>
-          <div className="btn_submit">
-            <input type="submit" value="CANDIDATAR" />
-          </div>
+          <SubmitButton title='Candidatar'/>
         </form>
       </div>
     </div>
