@@ -66,6 +66,11 @@ export default function Sidebar(props) {
             url={url}
             title="inscricao"
           />
+          <SideButton
+            name="SAIR"
+            status="logout"
+            title="sair"
+          />
         </div>
       </div>
       <div className="footer">

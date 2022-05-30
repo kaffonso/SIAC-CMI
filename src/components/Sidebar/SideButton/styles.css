@@ -35,4 +35,17 @@ button{
 
 .disabled{
   visibility:collapse;
+  display: none;
 }
+
+.logout{
+  visibility: visible;
+  background-color: #c94b25;
+  color: white;
+  margin-top: 3em;
+}
+
+.logout:hover{
+  background-color: #e9582c;
+}
+
