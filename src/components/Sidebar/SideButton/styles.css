@@ -12,6 +12,7 @@ button{
 }
 
 .active{
+  visibility: visible;
   background-color: #0075A6;
   color: white;
 }
@@ -22,6 +23,7 @@ button{
 }
 
 .innactive{
+  visibility: visible;
   background-color: white;
   color:#444444;
 }
@@ -29,4 +31,8 @@ button{
 .innactive:hover{
   border: 1px solid #057aac;
   
+}
+
+.disabled{
+  visibility:collapse;
 }

@@ -1,0 +1,71 @@
+*{
+  font-family: 'Ubuntu', 'ubuntu', 'sans-serif';
+}
+
+.data_container{
+  padding: 2em 2.5em;
+}
+
+.data_personal{
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data_school{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.data_course{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.data_payment{
+  margin-bottom: 1em;
+  display: flex;
+}
+
+
+.data_form p {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  margin: 0 1em 1em 0;
+}
+
+.dropdown select{
+  border: 0;
+  margin-top: 0.1em;
+  padding: 0.3em 1em;
+}
+
+.dropdown label{
+  margin-bottom: 0.2em;
+}
+
+.data_matricula{
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+

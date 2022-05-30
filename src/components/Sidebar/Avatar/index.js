@@ -2,10 +2,17 @@ import './styles.css'
 import image from '../../../img/profile.png'
 
 export default function Avatar(props) {
-
   const a = ''
   const name = a.concat(props.data.name, '').toUpperCase()
   const type = a.concat(props.data.type, '').toUpperCase()
+
+  let info
+
+  if (props.data.type === "Aluno") {
+    info = 'avatar_info'
+  } else{
+    info = 'avatar_info_hidden'
+  }
 
   return (
     <div className='avatar'>
@@ -19,7 +26,7 @@ export default function Avatar(props) {
         <p>{type}</p>
 
       </div>
-      <div className="avatar_info">
+      <div className={info}>
         <div className="avatar_info__course">
           <p>{props.data.info.course} </p>
         </div>

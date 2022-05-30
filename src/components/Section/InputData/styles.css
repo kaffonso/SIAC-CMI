@@ -1,0 +1,24 @@
+.input_data{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  margin: 0 1em 1em 0;
+}
+
+.input_data input{
+  width: 100%;
+  border:0;
+  border: 0.1em solid #8f8f8f;
+  border-radius: 0.3em;
+  padding: 0.26em;
+  height: 2em;
+  outline: 0;
+  font-family:'Ubuntu', 'ubuntu', sans-serif;
+
+}
+
+.input_data label{
+  font-family:'Ubuntu', 'ubuntu', sans-serif;
+  color: #444444;
+  margin-bottom: 0.2em;
+}

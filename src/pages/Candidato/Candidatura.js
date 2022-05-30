@@ -1,5 +1,6 @@
 import Sidebar from "../../components/Sidebar";
 import Section from "../../components/Section";
+import CreateCandidatura from "../../components/Section/CreateCandidatura";
 import data from "../../data.json";
 
 import "./styles.css";
@@ -11,7 +12,7 @@ export default function Candidatura() {
         <Sidebar data={data} />
       </div>
       <div className="section">
-        <Section />
+        <Section children={<CreateCandidatura />}/>
       </div>
     </div>
   );
