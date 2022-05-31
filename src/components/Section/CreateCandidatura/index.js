@@ -86,7 +86,7 @@ export default function CreateCandidatura() {
               change={(e) => setTelephone(e.target.value)}
             />
             <div className="dropdown">
-              <label for="sex">Sexo</label>
+              <label htmlFor="sex">Sexo</label>
               <select
                 id="sex_element"
                 name="sex"
@@ -101,7 +101,7 @@ export default function CreateCandidatura() {
             </div>
             <div className="data_course">
               <div className="dropdown">
-                <label for="island">Ilha de Residencia</label>
+                <label htmlFor="island">Ilha de Residencia</label>
                 <select
                   id="island_element"
                   name="island"
@@ -132,7 +132,7 @@ export default function CreateCandidatura() {
           <p>Escolha de Curso</p>
           <div className="data_course">
             <div className="dropdown">
-              <label for="course">Curso</label>
+              <label htmlFor="course">Curso</label>
               <select
                 id="course_element"
                 name="course"

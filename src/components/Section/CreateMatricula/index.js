@@ -61,7 +61,7 @@ export default function CreateMatricula() {
           <p>Detalhes de Matricula</p>
           <div className="data_course">
             <div className="dropdown">
-              <label for="course_year">Ano de Curso</label>
+              <label htmlFor="course_year">Ano de Curso</label>
               <select
                 id="course_year"
                 name="course_year"
