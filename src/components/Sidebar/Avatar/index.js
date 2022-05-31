@@ -1,14 +1,18 @@
 import './styles.css'
 import image from '../../../img/profile.png'
+import { useContext } from 'react'
+import Context from '../../../services/context'
 
-export default function Avatar(props) {
+export default function Avatar() {
+  const state = useContext(Context)
+
   const a = ''
-  const name = a.concat(props.data.name, '').toUpperCase()
-  const type = a.concat(props.data.type, '').toUpperCase()
+  const name = a.concat(state.name, '').toUpperCase()
+  const type = a.concat(state.type, '').toUpperCase()
 
   let info
 
-  if (props.data.type === "Aluno") {
+  if (state.type === "Aluno") {
     info = 'avatar_info'
   } else{
     info = 'avatar_info_hidden'
@@ -28,13 +32,13 @@ export default function Avatar(props) {
       </div>
       <div className={info}>
         <div className="avatar_info__course">
-          <p>{props.data.info.course} </p>
+          <p>{state.info.course} </p>
         </div>
         <div className="avatar_info__year">
-          <p>{props.data.info.year} </p>
+          <p>{state.info.year} </p>
         </div>
         <div className="avatar_info__code">
-          <p>{props.data.info.code} </p>
+          <p>{state.info.code} </p>
         </div>
       </div>
     </div>

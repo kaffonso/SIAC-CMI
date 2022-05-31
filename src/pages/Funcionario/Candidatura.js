@@ -4,16 +4,19 @@ import Content from "../../components/Section/ShowData";
 import data from "../../data.json";
 
 import "./styles.css";
+import Context from "../../services/context";
 
 export default function Candidatura() {
   return (
-    <div className="app">
-      <div className="sidebar">
-        <Sidebar data={data} />
+    <Context.Provider value={data}>
+      <div className="app">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="section">
+          <Section children={<Content />} />
+        </div>
       </div>
-      <div className="section">
-        <Section children={<Content />} />
-      </div>
-    </div>
+    </Context.Provider>
   );
 }
