@@ -1,4 +1,7 @@
 import {Routes, Route } from "react-router-dom";
+
+import Login from "../pages/Login";
+
 import CandidaturaF from "../pages/Funcionario/Candidatura";
 import MatriculaF from "../pages/Funcionario/Matricula";
 import InscricaoF from "../pages/Funcionario/Inscricao";
@@ -14,6 +17,7 @@ import ErrorPage from "../pages/ErrorPage";
 export default function RoutesApp() {
   return (
     <Routes>
+      <Route path="/login" element={<Login />} />
       <Route path="/funcionario/candidatura" element={<CandidaturaF />} />
       <Route path="/funcionario/matricula" element={<MatriculaF />} />
       <Route path="/funcionario/inscricao" element={<InscricaoF />} />
