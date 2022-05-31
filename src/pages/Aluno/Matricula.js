@@ -4,16 +4,19 @@ import CreateMatricula from "../../components/Section/CreateMatricula";
 import data from "../../data.json";
 
 import "./styles.css";
+import Context from "../../services/context";
 
 export default function Matricula() {
   return (
-    <div className="app">
-      <div className="sidebar">
-        <Sidebar data={data} />
+    <Context.Provider value={data}>
+      <div className="app">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="section">
+          <Section children={<CreateMatricula />} />
+        </div>
       </div>
-      <div className="section">
-        <Section children={<CreateMatricula/>}/>
-      </div>
-    </div>
+    </Context.Provider>
   );
 }

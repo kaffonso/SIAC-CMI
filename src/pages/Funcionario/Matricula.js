@@ -5,16 +5,19 @@ import data from "../../data.json";
 import NotImplemented from "../NotImplemented";
 
 import "./styles.css";
+import Context from "../../services/context";
 
 export default function Matricula() {
   return (
-    <div className="app">
-      <div className="sidebar">
-        <Sidebar data={data} />
+    <Context.Provider value={data}>
+      <div className="app">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="section">
+          <Section children={<NotImplemented />} />
+        </div>
       </div>
-      <div className="section">
-        <Section children={<NotImplemented />} />
-      </div>
-    </div>
+    </Context.Provider>
   );
 }
