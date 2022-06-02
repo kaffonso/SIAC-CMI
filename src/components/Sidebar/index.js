@@ -7,7 +7,7 @@ import Context from "../../services/context";
 
 import "./styles.css";
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   const sampleLocation = useLocation().pathname;
   const path = sampleLocation.split("/");
   

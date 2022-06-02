@@ -1,5 +1,6 @@
-import {Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import Context from "../services/context";
+import data from "../data.json";
 import Login from "../pages/Login";
 
 import CandidaturaF from "../pages/Funcionario/Candidatura";
@@ -16,18 +17,21 @@ import ErrorPage from "../pages/ErrorPage";
 
 export default function RoutesApp() {
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/funcionario/candidatura" element={<CandidaturaF />} />
-      <Route path="/funcionario/matricula" element={<MatriculaF />} />
-      <Route path="/funcionario/inscricao" element={<InscricaoF />} />
+    <Context.Provider value={data}>
+      <Routes>
+        <Route path="/login" element={<Login />} />
 
-      <Route path="/candidato/candidatura" element={<CandidaturaC />} />
-      <Route path="/candidato/matricula" element={<MatriculaC />} />
+        <Route path="/funcionario/candidatura" element={<CandidaturaF />} />
+        <Route path="/funcionario/matricula" element={<MatriculaF />} />
+        <Route path="/funcionario/inscricao" element={<InscricaoF />} />
 
-      <Route path="/aluno/matricula" element={<MatriculaA />} />
-      <Route path="/aluno/inscricao" element={<InscricaoA />} />
-      <Route path="*" element={<ErrorPage />} />
-    </Routes>
+        <Route path="/candidato/candidatura" element={<CandidaturaC />} />
+        <Route path="/candidato/matricula" element={<MatriculaC />} />
+
+        <Route path="/aluno/matricula" element={<MatriculaA />} />
+        <Route path="/aluno/inscricao" element={<InscricaoA />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Context.Provider>
   );
 }
