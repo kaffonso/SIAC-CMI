@@ -1,7 +1,7 @@
 import "../styles.css";
 import { useState } from "react";
 export default function Data(props) {
-  const data = props.data.info
+  const data = props.data.info;
   const [searchName, setSearchName] = useState("");
 
   const filterReturn = (filter, value) => {
@@ -12,7 +12,7 @@ export default function Data(props) {
     }
   };
 
-  data.sort((a,b) =>(a.code - b.code)) // ordenar dados por codigo, ordem crescente
+  data.sort((a, b) => a.code - b.code); // ordenar dados por codigo, ordem crescente
 
   const data_student = data
     .filter((value) => filterReturn(searchName, value))
@@ -46,7 +46,7 @@ export default function Data(props) {
           }}
         />
       </div>
-      
+
       <div className="data_header">
         <p className="box">CODIGO</p>
         <p className="box">NOME</p>
@@ -56,9 +56,7 @@ export default function Data(props) {
         <p className="box">ESTADO</p>
       </div>
 
-      <div className="data_wrapper">
-        {data_student}
-      </div>
+      <div className="data_wrapper">{data_student}</div>
     </>
   );
 }

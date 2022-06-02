@@ -1,6 +1,6 @@
-import './styles.css'
-import Data from './Data'
-import data from "./data.json";
+import "./styles.css";
+import Data from "./Data";
+import data from "./Data.json";
 
 export default function Content() {
   return (
