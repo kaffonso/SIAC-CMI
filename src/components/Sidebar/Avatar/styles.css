@@ -7,8 +7,8 @@
 
 .avatar_img{
     margin: 1em 0em;
-    width: 10em;
-    height: 10em;
+    width: 7.5em;
+    height: 7.5em;
     border-radius: 50%;
     background-color:white ;
     display: flex;
@@ -19,13 +19,13 @@
 
 #avatar-img{
   border-radius: 50%; 
-  width: 9.5em;
-  height: 9.5em; 
+  width: 7em;
+  height: 7em; 
 }
 
 .avatar_name{
   color: white;
-  font-size: 0.85em;
+  font-size: 0.7em;
   margin: 0.2em;
 }
 
@@ -48,7 +48,7 @@
   align-self: center;
   color: white;
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 0.6em;
   background-color: #0075A6;
   padding: 0.2em 1.5em 0.2em 1.5em;
   border: 0.12em solid white;
@@ -61,6 +61,7 @@
   color: white;
   display:flex;
   font-weight: 500;
+  font-size: 0.7em;
   margin:1em 0em 1.7em 0em ;
 }
 
