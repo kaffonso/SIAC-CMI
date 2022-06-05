@@ -1,5 +1,5 @@
 import './styles.css'
-import image from '../../../img/profile.png'
+import image from '../../../img/profile.jpg'
 import { useContext } from 'react'
 import Context from '../../../services/context'
 

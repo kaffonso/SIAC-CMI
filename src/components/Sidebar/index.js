@@ -11,7 +11,7 @@ export default function Sidebar() {
   const sampleLocation = useLocation().pathname;
   const path = sampleLocation.split("/");
   
-  console.log(path[2]);
+  // console.log(path[2]);
 
   let btn1, btn2, btn3;
 
@@ -32,7 +32,7 @@ export default function Sidebar() {
   const state = useContext(Context)
 
   const userType = state.type; //receber o tipo de usuario, que vem do json
-  console.log(userType)
+  // console.log(userType)
   let url; //variavel para guardar o url
 
   if (userType === "Funcionario") {
