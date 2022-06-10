@@ -1,0 +1,25 @@
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #64AECD;
+  height: 100vh;
+}
+
+.title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.box-login{
+  background-color: white;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+#form-login{
+  display: flex;
+  flex-direction: column;
+}

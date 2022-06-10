@@ -1,15 +1,17 @@
 import Avatar from "./Avatar";
 import SideButton from "./SideButton";
 import logo from "../../img/logo.png";
+import { useContext } from "react";
 import { useLocation } from "react-router-dom";
+import Context from "../../services/context";
 
 import "./styles.css";
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   const sampleLocation = useLocation().pathname;
   const path = sampleLocation.split("/");
   
-  console.log(path[2]);
+  // console.log(path[2]);
 
   let btn1, btn2, btn3;
 
@@ -27,7 +29,10 @@ export default function Sidebar(props) {
     btn3 = "active";
   }
 
-  const userType = props.data.type; //receber o tipo de usuario, que vem do json
+  const state = useContext(Context)
+
+  const userType = state.type; //receber o tipo de usuario, que vem do json
+  // console.log(userType)
   let url; //variavel para guardar o url
 
   if (userType === "Funcionario") {
@@ -44,7 +49,7 @@ export default function Sidebar(props) {
   return (
     <div className="sidebar">
       <div className="avatar">
-        <Avatar data={props.data} />
+        <Avatar />
       </div>
       <div className="options">
         <div className="sidebuttons">
@@ -65,6 +70,11 @@ export default function Sidebar(props) {
             status={btn3}
             url={url}
             title="inscricao"
+          />
+          <SideButton
+            name="SAIR"
+            status="logout"
+            title="sair"
           />
         </div>
       </div>

@@ -2,7 +2,13 @@ import { useNavigate } from "react-router";
 import "./styles.css";
 
 export default function SideButton(props) {
-  const link = props.url.concat(props.title) // receber as duas partes do url e concatenar para termos o link ou path para a respetiva pagina
+  let link;
+
+  if (props.title === "sair") {
+    link = "/login";
+  } else {
+    link = props.url.concat(props.title);
+  }
 
   const nav = useNavigate(); //componente que lida com os links, se inicia assim
 
@@ -11,9 +17,8 @@ export default function SideButton(props) {
       <button
         className={props.status}
         onClick={() => {
-          nav(link); // ao clicar sera redirecionado para o url ou link respetivo 
-        }}
-      >
+          nav(link); // ao clicar sera redirecionado para o url ou link respetivo
+        }}>
         {props.name}
       </button>
     </div>

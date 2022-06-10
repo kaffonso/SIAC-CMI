@@ -1,14 +1,13 @@
 button{
-  width: 18em;
-  height: 50px;
-  padding: 1em 2em 1em 2em;
-
+  width: 16em;
+  height: 3em;
   margin: 0.40em;
-  border-radius: 8px;
+  border-radius: 0.6em;
   border: 0px;
   background-color: white;
   cursor: pointer;
-  font-weight: 600;
+  font-size: 0.7em;
+  font-weight: 500;
 }
 
 .active{
@@ -35,4 +34,17 @@ button{
 
 .disabled{
   visibility:collapse;
+  display: none;
 }
+
+.logout{
+  visibility: visible;
+  background-color: #c94b25;
+  color: white;
+  margin-top: 3em;
+}
+
+.logout:hover{
+  background-color: #e9582c;
+}
+

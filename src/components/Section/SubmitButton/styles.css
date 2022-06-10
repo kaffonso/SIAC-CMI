@@ -1,15 +1,23 @@
 .btn_submit{
   display: flex;
   width: 100%;
-  justify-content: flex-end  
+  justify-content: flex-end;
 }
 
 .btn_submit input{
   border: 0;
-  padding: 0.4em 1.4em;
-  font-size: 0.8em;
-  background-color:rgb(42, 177, 42);
-  font-weight: 600;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+  background-color:rgb(17, 158, 17);
+  font-weight: 500;
   border-radius: 0.5em;
   color: white;
+  cursor: pointer;
+}
+
+.btn_submit input:hover{
+  background-color:rgb(121, 207, 121);
+  transition: 0.5s ease-out;
+  cursor: pointer;
+
 }
