@@ -14,9 +14,7 @@ export default function Data(props) {
 
   data.sort((a, b) => a.code - b.code); // ordenar dados por codigo, ordem crescente
 
-  const data_student = data
-    .filter((value) => filterReturn(searchName, value))
-    .map((data) => {
+  const data_student = data.filter((value) => filterReturn(searchName, value)).map((data) => {
       const space = "";
       const name = space.concat(data.name, "").toUpperCase();
       const status = space.concat(data.status, "").toUpperCase();
