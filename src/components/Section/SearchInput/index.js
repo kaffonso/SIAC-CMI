@@ -9,7 +9,8 @@ export default function SearchInput(props){
           id="searchbar_input"
           placeholder="Procurar"
           onChange={props.change}
-        />
+          value={props.value}/>
+        <input id="searchbar_btn" type="submit" onClick={props.click} value="Search"/>
       </div>
   )
 }

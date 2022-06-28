@@ -1,11 +1,12 @@
 import "../styles.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import SearchInput from "../../SearchInput";
+
 export default function Data(props) {
   //const data = props.data.info
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
-  
 
   useEffect(() => {
     fetchAllData();
@@ -22,9 +23,9 @@ export default function Data(props) {
     e.preventDefault();
     return await axios
       .get(`http://localhost:3333/info?name_like=${value}`)
-      .then((response) =>{
-         setData(response.data)
-         setValue("")
+      .then((response) => {
+        setData(response.data);
+        setValue("");
       })
       .catch((err) => console.log(`Search error: ${err}`));
   };
@@ -32,21 +33,21 @@ export default function Data(props) {
   const handleStatus = async (e) => {
     e.preventDefault();
     return await axios
-    .get(`http://localhost:3333/info?status=${value}`)
-    .then((response)=>{
-      setData(response.data)
-      setValue("")
-    })
-    .catch((err) => console.err(`Status filter error: ${err}`))
-  }
+      .get(`http://localhost:3333/info?status=${value}`)
+      .then((response) => {
+        setData(response.data);
+        setValue("");
+      })
+      .catch((err) => console.err(`Status filter error: ${err}`));
+  };
 
   const handleSex = async (e) => {
     e.preventDefault();
     return await axios
       .get(`http://localhost:3333/info?sex=${value}`)
-      .then((response) =>{
-         setData(response.data)
-         setValue("")
+      .then((response) => {
+        setData(response.data);
+        setValue("");
       })
       .catch((err) => console.log(`Search error: ${err}`));
   };
@@ -71,35 +72,32 @@ export default function Data(props) {
   return (
     <>
       <div className="data_searchbar">
-      <div>
-        <select onChange={(e) => {
-          setValue(e.target.value) 
-          }} >
-          <option value="none" selected disabled hidden>Select a sex</option>
-          <option value="M" onClick={handleSex}>Masculino</option>
-          <option value="F" onClick = {handleSex}>Feminino</option>
-        </select>
+        <div className="filters">
+          <div className="filter">
+            <select onChange={(e) => {setValue(e.target.value)}}>
+              <option value="none" selected disabled hidden>Select a sex </option>
+              <option value="M" onClick={handleSex}> Masculino </option>
+              <option value="F" onClick={handleSex}> Feminino </option>
+            </select>
+          </div>
+          <div className="filter">
+            <select onChange={(e) => {setValue(e.target.value)}}>
+              <option value="none" selected disabled hidden> Select a filter </option>
+              <option value="Aprovado" onClick={handleStatus}>
+                Aprovado
+              </option>
+              <option value="Reprovado" onClick={handleStatus}>
+                Reprovado
+              </option>
+            </select>
+          </div>
+        </div>
+          <SearchInput
+            value={value}
+            change={(e) => setValue(e.target.value)}
+            click={handleSearch}
+          />
       </div>
-      <div>
-        <select onChange={(e) => {
-          setValue(e.target.value) 
-          }} >
-          <option value="none" selected disabled hidden>Select a filter</option>
-          <option value="Aprovado" onClick={handleStatus}>APROVADO</option>
-          <option value="Reprovado" onClick = {handleStatus}>REPROVADO</option>
-        </select>
-      </div>
-        <label htmlFor="PROCURAR">PROCURAR</label>
-        <input
-          type="text"
-          id="searchbar_input"
-          placeholder="Procurar"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
-        <input type="submit" onClick={handleSearch} value="Search"/>
-      </div>
-
       <div className="data_header">
         <p className="box">CODIGO</p>
         <p className="box">NOME</p>
@@ -110,9 +108,6 @@ export default function Data(props) {
       </div>
 
       <div className="data_wrapper">{data_student}</div>
-
-     
-
     </>
   );
 }
