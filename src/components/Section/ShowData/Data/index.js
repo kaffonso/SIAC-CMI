@@ -1,5 +1,7 @@
 import "../styles.css";
 import { useState } from "react";
+import SearchInput from "../../SearchInput";
+
 export default function Data(props) {
   const data = props.data.info;
   const [searchName, setSearchName] = useState("");
@@ -33,18 +35,7 @@ export default function Data(props) {
     });
   return (
     <>
-      <div className="data_searchbar">
-        <label htmlFor="PROCURAR">PROCURAR</label>
-        <input
-          type="text"
-          id="searchbar_input"
-          placeholder="Procurar"
-          onChange={(event) => {
-            setSearchName(event.target.value);
-          }}
-        />
-      </div>
-
+      <SearchInput change={(event) => { setSearchName(event.target.value);}}/>
       <div className="data_header">
         <p className="box">CODIGO</p>
         <p className="box">NOME</p>

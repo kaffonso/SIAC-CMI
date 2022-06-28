@@ -25,7 +25,7 @@ export default function CreateCandidatura() {
     };
 
     const candidatura = {
-      "code": 201231,
+      // "code": 201231,
       "name": name,
       "nasc": date,
       "cni": CNI,

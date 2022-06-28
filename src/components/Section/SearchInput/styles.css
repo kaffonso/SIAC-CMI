@@ -1,0 +1,29 @@
+.data_searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  float: right;
+  background-color: white;
+  margin: 0.5em 0em;
+}
+
+.data_searchbar label{
+  font-size: 0.65em;
+  margin: 0.5em;
+  color: #444444;
+  font-weight: 500;
+}
+
+.data_searchbar input {
+  width: 15%;
+  height: 1em;
+  border: 0.1em solid #444444;
+  border-radius: 0.6em;
+  font-size: 0.65em;
+  padding: 1em;
+  text-align: center;
+  user-select: none;
+  outline: none;
+}
