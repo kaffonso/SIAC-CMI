@@ -35,7 +35,6 @@ export default function Data(props) {
     });
   return (
     <>
-      <SearchInput change={(event) => { setSearchName(event.target.value);}}/>
       <div className="data_header">
         <p className="box">CODIGO</p>
         <p className="box">NOME</p>
