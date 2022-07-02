@@ -5,26 +5,35 @@ export default function Data(props) {
   //const data = props.data.info
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
-  
+
 
   useEffect(() => {
     fetchAllData();
   }, []);
 
+  // const fetchAllData = async () => {
+  //   return await axios
+  //     .get("http://localhost:3000/api/students")
+  //     .then((response) => {setData(response.data)
+  //     console.log(response.data)})
+  //     .catch((err) => console.log(err));
+  // };
   const fetchAllData = async () => {
-    return await axios
-      .get("http://localhost:3333/info")
-      .then((response) => setData(response.data))
-      .catch((err) => console.log(err));
+    return await axios.get('http://localhost:3001/api/candidatura')
+      .then((response) => {
+
+        console.log(response.data)
+        setData(response.data);
+      });
   };
 
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?name_like=${value}`)
-      .then((response) =>{
-         setData(response.data)
-         setValue("")
+      .get(`http://localhost:3001/api/candidatura?name=${value}`)
+      .then((response) => {
+        setData(response.data)
+        setValue("")
       })
       .catch((err) => console.log(`Search error: ${err}`));
   };
@@ -32,21 +41,22 @@ export default function Data(props) {
   const handleStatus = async (e) => {
     e.preventDefault();
     return await axios
-    .get(`http://localhost:3333/info?status=${value}`)
-    .then((response)=>{
-      setData(response.data)
-      setValue("")
-    })
-    .catch((err) => console.err(`Status filter error: ${err}`))
+      .get(`http://localhost:3001/api/candidatura?status=${value}`)
+      .then((response) => {
+        setData(response.data)
+        setValue("")
+      })
+      .catch((err) => console.err(`Status filter error: ${err}`))
   }
 
   const handleSex = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?sex=${value}`)
-      .then((response) =>{
-         setData(response.data)
-         setValue("")
+      .get(`http://localhost:3001/api/candidatura?sex=${value}`)
+      .then((response) => {
+        console.log(response)
+        setData(response.data)
+        setValue("")
       })
       .catch((err) => console.log(`Search error: ${err}`));
   };
@@ -54,41 +64,41 @@ export default function Data(props) {
 
   const data_student = data.map((data) => {
     const space = "";
-    const name = space.concat(data.name, "").toUpperCase();
-    const status = space.concat(data.status, "").toUpperCase();
-    const island = space.concat(data.island.islandName, "").toUpperCase();
+    const name = space.concat(data.full_name, "").toUpperCase();
+    const status = space.concat(data.city, "").toUpperCase();
+    const island = space.concat(data.island, "").toUpperCase();
     return (
       <div className="data_element" key={data.code}>
         <p className="box">{data.code}</p>
-        <p className="box">{name}</p>
-        <p className="box">{data.course.courseAcronym}</p>
-        <p className="box">{data.sex}</p>
-        <p className="box">{island}</p>
-        <p className="box">{status}</p>
+        <p className="box">{name.trim()}</p>
+        <p className="box">{data.course.acronym}</p>
+        <p className="box">{data.user.sex}</p>
+        <p className="box">{data.address.island}</p>
+        <p className="box">{status.trim()}</p>
       </div>
     );
   });
   return (
     <>
       <div className="data_searchbar">
-      <div>
-        <select onChange={(e) => {
-          setValue(e.target.value) 
+        <div>
+          <select onChange={(e) => {
+            setValue(e.target.value)
           }} >
-          <option value="none" selected disabled hidden>Select a sex</option>
-          <option value="M" onClick={handleSex}>Masculino</option>
-          <option value="F" onClick = {handleSex}>Feminino</option>
-        </select>
-      </div>
-      <div>
-        <select onChange={(e) => {
-          setValue(e.target.value) 
+            <option value="none" selected disabled hidden>Select a sex</option>
+            <option value="M" onClick={handleSex}>Masculino</option>
+            <option value="F" onClick={handleSex}>Feminino</option>
+          </select>
+        </div>
+        <div>
+          <select onChange={(e) => {
+            setValue(e.target.value)
           }} >
-          <option value="none" selected disabled hidden>Select a filter</option>
-          <option value="Aprovado" onClick={handleStatus}>APROVADO</option>
-          <option value="Reprovado" onClick = {handleStatus}>REPROVADO</option>
-        </select>
-      </div>
+            <option value="none" selected disabled hidden>Select a filter</option>
+            <option value="Aprovado" onClick={handleStatus}>APROVADO</option>
+            <option value="Reprovado" onClick={handleStatus}>REPROVADO</option>
+          </select>
+        </div>
         <label htmlFor="PROCURAR">PROCURAR</label>
         <input
           type="text"
@@ -97,7 +107,7 @@ export default function Data(props) {
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
-        <input type="submit" onClick={handleSearch} value="Search"/>
+        <input type="submit" onClick={handleSearch} value="Search" />
       </div>
 
       <div className="data_header">
@@ -111,7 +121,7 @@ export default function Data(props) {
 
       <div className="data_wrapper">{data_student}</div>
 
-     
+
 
     </>
   );
