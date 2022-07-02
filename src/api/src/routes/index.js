@@ -21,6 +21,8 @@ routes.get("/api/classes", ClassController.read);
 routes.get("/api/candidatures", CandidatureController.read);
 routes.get("/api/candidatures/info", CandidatureController.read_full);
 routes.get("/api/registrations", RegistrationController.read);
+routes.get("/api/registrations/info", RegistrationController.read_full);
+
 
 routes.post("/api/users", UserController.store);
 routes.post("/api/students", StudentController.store);
