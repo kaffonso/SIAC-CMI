@@ -15,7 +15,7 @@ export default function Data() {
 
   const fetchAllData = async () => {
     return await axios
-      .get("http://localhost:3333/api/candidatures/info")
+      .get("http://localhost:3333/api/registrations/info")
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -23,7 +23,7 @@ export default function Data() {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?name_like=${value}`)
+      .get(`http://localhost:3333/api/registrations/info?name_like=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -34,7 +34,7 @@ export default function Data() {
   const handleStatus = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?status=${value}`)
+      .get(`http://localhost:3333/api/registrations/info?status=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -45,7 +45,7 @@ export default function Data() {
   const handleSex = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?sex=${value}`)
+      .get(`http://localhost:3333/api/registrations/info?sex=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -56,18 +56,17 @@ export default function Data() {
 
   const data_student = data.map((data) => {
     const space = "";
-    const name = space.concat(data.candidate.full_name, "").toUpperCase();
-    console.log(data)
-    const status = space.concat(data.status, "").toUpperCase();
-    const island = space.concat(data.candidate.address.island, "").toUpperCase();
+    const name = space.concat(data.student.full_name, "").toUpperCase();
+    const date = new Date(data.created_at)
+    console.log(date.getDate())
     return (
       <div className="data_element" key={data.id}>
         <p className="box">{data.id}</p>
         <p className="box">{name}</p>
+        <p className="box">{data.student.code}</p>
         <p className="box">{data.course.acronym}</p>
-        <p className="box">{data.candidate.user.sex}</p>
-        <p className="box">{island}</p>
-        <p className="box">{status}</p>
+        <p className="box">{data.course.year}</p>
+        <p className="box">{date.getDay() + '/' + date.getMonth()  + '/' + date.getFullYear()}</p>
       </div>
     );
   });
@@ -100,7 +99,7 @@ export default function Data() {
             click={handleSearch}
           />
       </div>
-      <DataHeader one='CODIGO' two='NOME' three='CURSO' four='SEXO' five='ILHA' six='ESTADO' /> 
+      <DataHeader one='CODIGO' two='NOME' three='CODIGO ALUNO' four='CURSO' five='ANO' six='DATA' /> 
 
       <div className="data_wrapper">{data_student}</div>
     </>

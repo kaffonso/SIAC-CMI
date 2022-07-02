@@ -10,7 +10,7 @@ module.exports = {
   async read_full(req, res, next) {
     pool
       .query(
-        `SELECT registration.id, row_to_json(student) as student, row_to_json(course) as course FROM public.registration` + 
+        `SELECT registration.id, registration.created_at, row_to_json(student) as student, row_to_json(course) as course FROM public.registration` + 
         ` inner join (select * from public.student) student on student.code = public.registration.id_student` + 
         ` inner join (select * from public.course) course on course.id = public.registration.id_course`
       )

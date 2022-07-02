@@ -1,6 +1,6 @@
 import Sidebar from "../../components/Sidebar";
 import Section from "../../components/Section";
-import ShowCandidatures from "../../components/Section/ShowCandidatures";
+import ShowRegistrations from "../../components/Section/ShowRegistrations";
 
 import "./styles.css";
 
@@ -11,7 +11,7 @@ export default function Matricula() {
           <Sidebar />
         </div>
         <div className="section">
-          <Section children={<ShowCandidatures />} />
+          <Section children={<ShowRegistrations />} />
         </div>
       </div>
   );
