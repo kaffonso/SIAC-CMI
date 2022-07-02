@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-json": "json-server --watch ./src/components/Section/ShowData/data.json --port 3333"
+    "server-json": "json-server --watch ./src/components/Section/ShowData/data.json --port 3333",
+    "server" : "cd ./src/api && npm run dev"
   },
   "eslintConfig": {
     "extends": [

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import SearchInput from "../../SearchInput";
 
-export default function Data(props) {
+export default function Data() {
   //const data = props.data.info
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
@@ -14,7 +14,7 @@ export default function Data(props) {
 
   const fetchAllData = async () => {
     return await axios
-      .get("http://localhost:3333/info")
+      .get("http://localhost:3333/api/candidatures/info")
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -22,7 +22,7 @@ export default function Data(props) {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?name_like=${value}`)
+      .get(`http://localhost:3333/api/candidatures/info?name_like=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -33,7 +33,7 @@ export default function Data(props) {
   const handleStatus = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?status=${value}`)
+      .get(`http://localhost:3333/api/candidatures/info?status=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -44,7 +44,7 @@ export default function Data(props) {
   const handleSex = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/info?sex=${value}`)
+      .get(`http://localhost:3333/api/candidatures/info?sex=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -55,15 +55,16 @@ export default function Data(props) {
 
   const data_student = data.map((data) => {
     const space = "";
-    const name = space.concat(data.name, "").toUpperCase();
+    const name = space.concat(data.candidate.full_name, "").toUpperCase();
+    console.log(data)
     const status = space.concat(data.status, "").toUpperCase();
-    const island = space.concat(data.island.islandName, "").toUpperCase();
+    const island = space.concat(data.candidate.address.island, "").toUpperCase();
     return (
-      <div className="data_element" key={data.code}>
-        <p className="box">{data.code}</p>
+      <div className="data_element" key={data.id}>
+        <p className="box">{data.id}</p>
         <p className="box">{name}</p>
-        <p className="box">{data.course.courseAcronym}</p>
-        <p className="box">{data.sex}</p>
+        <p className="box">{data.course.acronym}</p>
+        <p className="box">{data.candidate.user.sex}</p>
         <p className="box">{island}</p>
         <p className="box">{status}</p>
       </div>

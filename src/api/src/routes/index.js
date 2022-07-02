@@ -19,6 +19,7 @@ routes.get("/api/courses", CourseController.read);
 routes.get("/api/candidates", CandidateController.read);
 routes.get("/api/classes", ClassController.read);
 routes.get("/api/candidatures", CandidatureController.read);
+routes.get("/api/candidatures/info", CandidatureController.read_full);
 routes.get("/api/registrations", RegistrationController.read);
 
 routes.post("/api/users", UserController.store);
