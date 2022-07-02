@@ -1,7 +1,7 @@
 import "./styles.css";
 import Data from "./Data";
 
-export default function Content() {
+export default function ShowCandidatures() {
   return (
     <div className="data_student">
       <div className="data_container">

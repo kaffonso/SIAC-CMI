@@ -2,6 +2,7 @@ import "../styles.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import SearchInput from "../../SearchInput";
+import DataHeader from "../../DataHeader";
 
 export default function Data() {
   //const data = props.data.info
@@ -99,14 +100,7 @@ export default function Data() {
             click={handleSearch}
           />
       </div>
-      <div className="data_header">
-        <p className="box">CODIGO</p>
-        <p className="box">NOME</p>
-        <p className="box">CURSO</p>
-        <p className="box">SEXO</p>
-        <p className="box">ILHA</p>
-        <p className="box">ESTADO</p>
-      </div>
+      <DataHeader one='CODIGO' two='NOME' three='CURSO' four='SEXO' five='ILHA' six='ESTADO' /> 
 
       <div className="data_wrapper">{data_student}</div>
     </>
