@@ -41,7 +41,7 @@ const filter = (query) => {
         ` INNER JOIN (SELECT * FROM public.user) user_info ON user_info.id = public.candidate.id_user`+
         ` INNER JOIN (SELECT * FROM public.address) address on address.id = public.candidate.id_address) candidate ON candidate.id = public.candidature.id_candidate` +
         ` INNER JOIN (SELECT * FROM public.course) course ON course.id = public.candidature.id_course
-          WHERE candidate.full_name = '${name}' AND user.sex = '${sex.toUpperCase()}' AND candidature.status = '${status}'`
+          WHERE candidate.full_name = '${name}%' AND user.sex = '${sex.toUpperCase()}' AND candidature.status = '${status}'`
           
   }
         
@@ -49,9 +49,8 @@ const filter = (query) => {
        return query = `SELECT candidature.id, candidature.status, row_to_json(candidate) as candidate, row_to_json(course) as course FROM public.candidature` +
         ` INNER JOIN (SELECT candidate.id, candidate.full_name, row_to_json(user_info) as user, row_to_json(address) as address FROM public.candidate`+
         ` INNER JOIN (SELECT * FROM public.user) user_info ON user_info.id = public.candidate.id_user`+
-        ` INNER JOIN (SELECT * FROM public.address) address on address.id = public.candidate.id_address) candidate ON candidate.id = public.candidature.id_candidate` +
-        ` INNER JOIN (SELECT * FROM public.course) course ON course.id = public.candidature.id_course
-          WHERE candidate.full_name = '${name}' AND user.sex = '${sex.toUpperCase()}'`
+        ` INNER JOIN (SELECT * FROM public.address) address on address.id = public.candidate.id_address WHERE public.candidate.full_name = '${name}%' AND public.user.sex = '${sex.toUpperCase()}') candidate ON candidate.id = public.candidature.id_candidate` +
+        ` INNER JOIN (SELECT * FROM public.course) course ON course.id = public.candidature.id_course`
           
   }
 
@@ -69,7 +68,7 @@ const filter = (query) => {
         ` INNER JOIN (SELECT * FROM public.user) user_info ON user_info.id = public.candidate.id_user`+
         ` INNER JOIN (SELECT * FROM public.address) address on address.id = public.candidate.id_address) candidate ON candidate.id = public.candidature.id_candidate` +
         ` INNER JOIN (SELECT * FROM public.course) course ON course.id = public.candidature.id_course
-          WHERE candidate.full_name = '${name}' AND candidature.status = '${status}'`
+          WHERE candidate.full_name = '${name}%' AND candidature.status = '${status}'`
           }
      
 
