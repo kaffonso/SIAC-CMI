@@ -23,7 +23,7 @@ export default function Data() {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?name_like=${value}`)
+      .get(`http://localhost:3333/api/candidatures/info?name=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
