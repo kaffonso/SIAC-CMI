@@ -19,7 +19,7 @@ export default function RoutesApp() {
   return (
     <Context.Provider value={data}>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
 
         <Route path="/funcionario/candidatura" element={<CandidaturaF />} />
         <Route path="/funcionario/matricula" element={<MatriculaF />} />
