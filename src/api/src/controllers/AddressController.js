@@ -1,4 +1,15 @@
 const pool = require("../config/database");
+const islandAcronym_dict = {
+  "Santo Antão":"SA",
+  "São Vicente": "SV",
+  "São Nicolau":"SN",
+  "Sal":"SL",
+  "Boavista":"BV",
+  "Maio":"MA",
+  "Santiago":"ST",
+  "Fogo":"FG",
+  "Brava":"BR"
+}
 
 module.exports = {
   async read(req, res, next) {
@@ -10,25 +21,10 @@ module.exports = {
   async store(req, res, next) {
     const { island, country, city } = req.body;
 
-    let island_acronym;
+    let island_acronym = islandAcronym_dict[island]
 
-    if (island === "Santo Antão") {
-      island_acronym = "SA";
-    } else if (island === "São Vicente") {
-      island_acronym = "SV";
-    } else if (island === "São Nicolau") {
-      island_acronym = "SN";
-    } else if (island === "Sal") {
-      island_acronym = "SL";
-    } else if (island === "Boavista") {
-      island_acronym = "BV";
-    } else if (island === "Maio") {
-      island_acronym = "MA";
-    } else if (island === "Santiago") {
-      island_acronym = "ST";
-    } else if (island === "Fogo") {
-      island_acronym = "FG";
-    } else island_acronym = "BR";
+    
+
 
     pool.query(
       `insert into public.address (island, country, city, island_acronym,  created_at, updated_at)` +
