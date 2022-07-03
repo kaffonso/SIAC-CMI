@@ -31,7 +31,7 @@ const filter = (query) => {
           ` JOIN (SELECT * FROM public.address) address ON public.student.id_address = address.id`+
           ` INNER JOIN (SELECT * FROM public.user) user_info ON public.student.id_user = user_info.id `+
           ` INNER JOIN (SELECT * FROM public.course) course ON course.id = public.student.id_course 
-          WHERE student.full_name = '${name}' AND user.sex = '${sex.toUpperCase()}'`
+          WHERE student.full_name = '${name}%' AND user.sex = '${sex.toUpperCase()}'`
           break;
 
      

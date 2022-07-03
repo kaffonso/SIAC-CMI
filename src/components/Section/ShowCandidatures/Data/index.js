@@ -27,7 +27,7 @@ export default function Data() {
       .then((response) => {
         setData(response.data);
         setValue("");
-      })
+      }) 
       .catch((err) => console.log(`Search error: ${err}`));
   };
 
