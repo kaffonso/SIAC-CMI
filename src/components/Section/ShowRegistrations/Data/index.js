@@ -23,7 +23,7 @@ export default function Data() {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?name_like=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?name=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -31,10 +31,10 @@ export default function Data() {
       .catch((err) => console.log(`Search error: ${err}`));
   };
 
-  const handleStatus = async (e) => {
+  const handleCourse = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?status=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?course=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -42,10 +42,10 @@ export default function Data() {
       .catch((err) => console.err(`Status filter error: ${err}`));
   };
 
-  const handleSex = async (e) => {
+  const handleYear = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?sex=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/registrations/info?year=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -66,7 +66,7 @@ export default function Data() {
         <p className="box">{data.student.code}</p>
         <p className="box">{data.course.acronym}</p>
         <p className="box">{data.course.year}</p>
-        <p className="box">{date.getDay() + '/' + date.getMonth()  + '/' + date.getFullYear()}</p>
+        <p className="box">{date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear()}</p>
       </div>
     );
   });
@@ -75,31 +75,40 @@ export default function Data() {
       <div className="data_searchbar">
         <div className="filters">
           <div className="filter">
-            <select onChange={(e) => {setValue(e.target.value)}}>
-              <option value="none" selected disabled hidden>Select a sex </option>
-              <option value="M" onClick={handleSex}> Masculino </option>
-              <option value="F" onClick={handleSex}> Feminino </option>
+            <select onChange={(e) => { setValue(e.target.value) }}>
+              <option value="none" selected disabled hidden>Select a year </option>
+              <option value="1" onClick={handleYear}> first year </option>
+              <option value="2" onClick={handleYear}> second year </option>
+              <option value="3" onClick={handleYear}> third year </option>
+              <option value="4" onClick={handleYear}> fourth year </option>
+
             </select>
           </div>
           <div className="filter">
-            <select onChange={(e) => {setValue(e.target.value)}}>
-              <option value="none" selected disabled hidden> Select a filter </option>
-              <option value="Aprovado" onClick={handleStatus}>
-                Aprovado
+            <select onChange={(e) => { setValue(e.target.value) }}>
+              <option value="none" selected disabled hidden> Select a course </option>
+              <option value="LEIT" onClick={handleCourse}>
+                LEIT
               </option>
-              <option value="Reprovado" onClick={handleStatus}>
-                Reprovado
+              <option value="LEE" onClick={handleCourse}>
+                LEE
+              </option>
+              <option value="LEC" onClick={handleCourse}>
+                LEC
+              </option>
+              <option value="LCB" onClick={handleCourse}>
+                LCB
               </option>
             </select>
           </div>
         </div>
-          <SearchInput
-            value={value}
-            change={(e) => setValue(e.target.value)}
-            click={handleSearch}
-          />
+        <SearchInput
+          value={value}
+          change={(e) => setValue(e.target.value)}
+          click={handleSearch}
+        />
       </div>
-      <DataHeader one='CODIGO' two='NOME' three='CODIGO ALUNO' four='CURSO' five='ANO' six='DATA' /> 
+      <DataHeader one='CODIGO' two='NOME' three='CODIGO ALUNO' four='CURSO' five='ANO' six='DATA' />
 
       <div className="data_wrapper">{data_student}</div>
     </>

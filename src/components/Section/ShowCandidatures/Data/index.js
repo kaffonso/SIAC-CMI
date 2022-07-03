@@ -42,10 +42,10 @@ export default function Data() {
       .catch((err) => console.err(`Status filter error: ${err}`));
   };
 
-  const handleSex = async (e) => {
+  const handleCourse = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`https://siac-cmi-bck.herokuapp.com/api/candidatures/info?sex=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/candidatures/info?course=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -77,14 +77,24 @@ export default function Data() {
         <div className="filters">
           <div className="filter">
             <select onChange={(e) => {setValue(e.target.value)}}>
-              <option value="none" selected disabled hidden>Select a sex </option>
-              <option value="M" onClick={handleSex}> Masculino </option>
-              <option value="F" onClick={handleSex}> Feminino </option>
+            <option value="none" selected disabled hidden> Select a course </option>
+              <option value="LEIT" onClick={handleCourse}>
+                LEIT
+              </option>
+              <option value="LEE" onClick={handleCourse}>
+                LEE
+              </option>
+              <option value="LEC" onClick={handleCourse}>
+                LEC
+              </option>
+              <option value="LCB" onClick={handleCourse}>
+                LCB
+              </option>
             </select>
           </div>
           <div className="filter">
             <select onChange={(e) => {setValue(e.target.value)}}>
-              <option value="none" selected disabled hidden> Select a filter </option>
+              <option value="none" selected disabled hidden> Select stauts </option>
               <option value="Aprovado" onClick={handleStatus}>
                 Aprovado
               </option>
