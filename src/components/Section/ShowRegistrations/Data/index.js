@@ -78,17 +78,16 @@ export default function Data() {
         <AiOutlineFilter size={23}/>
           <div className="filter">
             <select onChange={(e) => { setValue(e.target.value) }}>
-              <option value="none" selected disabled hidden>Select a year </option>
-              <option value="1" onClick={handleYear}> first year </option>
-              <option value="2" onClick={handleYear}> second year </option>
-              <option value="3" onClick={handleYear}> third year </option>
-              <option value="4" onClick={handleYear}> fourth year </option>
-
+              <option value="none" selected disabled hidden> Por Ano </option>
+              <option value="1" onClick={handleYear}> 1º Ano </option>
+              <option value="2" onClick={handleYear}> 2º Ano </option>
+              <option value="3" onClick={handleYear}> 3º Ano </option>
+              <option value="4" onClick={handleYear}> 4º Ano </option>
             </select>
           </div>
           <div className="filter">
             <select onChange={(e) => { setValue(e.target.value) }}>
-              <option value="none" selected disabled hidden> Select a course </option>
+              <option value="none" selected disabled hidden> Por Curso </option>
               <option value="LEIT" onClick={handleCourse}>
                 LEIT
               </option>
