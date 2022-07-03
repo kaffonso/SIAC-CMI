@@ -5,7 +5,7 @@ export default function SideButton(props) {
   let link;
 
   if (props.title === "sair") {
-    link = "/login";
+    link = "/";
   } else {
     link = props.url.concat(props.title);
   }
