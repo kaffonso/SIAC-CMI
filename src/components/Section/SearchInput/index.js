@@ -1,16 +1,16 @@
 import './styles.css'
+import { BsSearch } from 'react-icons/bs'
 
 export default function SearchInput(props){
   return(
     <div className="data_searchbar">
-        <label htmlFor="PROCURAR">PROCURAR</label>
         <input
           type="text"
           id="searchbar_input"
           placeholder="Procurar"
           onChange={props.change}
           value={props.value}/>
-        <input id="searchbar_btn" type="submit" onClick={props.click} value="Search"/>
+        <button id="searchbar_btn" onClick={props.click} type="submit"> {<BsSearch size={15}/>} </button>
       </div>
   )
 }

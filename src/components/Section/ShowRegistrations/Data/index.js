@@ -1,5 +1,6 @@
-import "../styles.css";
+import "../../CreateCandidatura/styles.css";
 import { useState, useEffect } from "react";
+import {AiOutlineFilter} from 'react-icons/ai'
 import axios from "axios";
 import SearchInput from "../../SearchInput";
 import DataHeader from "../../DataHeader";
@@ -74,6 +75,7 @@ export default function Data() {
     <>
       <div className="data_searchbar">
         <div className="filters">
+        <AiOutlineFilter size={23}/>
           <div className="filter">
             <select onChange={(e) => {setValue(e.target.value)}}>
               <option value="none" selected disabled hidden>Select a sex </option>

@@ -7,6 +7,7 @@
   float: right;
   background-color: white;
   margin: 0.5em 0em;
+  margin-right: 5px;
 }
 
 .data_searchbar label{
@@ -16,12 +17,10 @@
 }
 
 #searchbar_input {
-  width: 15%;
-  height: 1em;
-  border: 0.1em solid #444444;
-  border-radius: 0.5em;
-  font-size: 0.65em;
-  padding: 1em;
+  width: 20%;
+  border: 1px solid #444444;
+  border-radius: 0.3em;
+  padding: 0.2em;
   text-align: center;
   user-select: none;
   outline: none;
@@ -29,11 +28,7 @@
 }
 
 #searchbar_btn{
-  width: 10%;
-  border: 0.1em solid #444444;
-  border-radius: 0.5em;
-  font-size: 0.65em;
-  padding: 0.4em;
+  width: 1%;
   text-align: center;
   user-select: none;
   outline: none;
