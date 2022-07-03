@@ -15,7 +15,7 @@ export default function Data() {
 
   const fetchAllData = async () => {
     return await axios
-      .get("http://localhost:3333/api/candidatures/info")
+      .get("https://siac-cmi-bck.herokuapp.com/api/candidatures/info")
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -23,7 +23,7 @@ export default function Data() {
   const handleSearch = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?name=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/candidatures/info?name=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -34,7 +34,7 @@ export default function Data() {
   const handleStatus = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?status=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/candidatures/info?status=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
@@ -45,7 +45,7 @@ export default function Data() {
   const handleSex = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3333/api/candidatures/info?sex=${value}`)
+      .get(`https://siac-cmi-bck.herokuapp.com/api/candidatures/info?sex=${value}`)
       .then((response) => {
         setData(response.data);
         setValue("");
