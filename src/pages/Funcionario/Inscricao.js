@@ -1,6 +1,7 @@
 import Sidebar from "../../components/Sidebar";
 import Section from "../../components/Section";
 import ShowCandidatures from "../../components/Section/ShowCandidatures";
+import NotImplemented from '../NotImplemented'
 
 import "./styles.css";
 
@@ -11,7 +12,7 @@ export default function Inscricao() {
           <Sidebar />
         </div>
         <div className="section">
-          <Section children={<ShowCandidatures />} />
+          <Section children={<NotImplemented />} />
         </div>
       </div>
   );
